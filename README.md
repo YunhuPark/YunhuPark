@@ -1,6 +1,4 @@
-<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=180&section=header&text=Park%20Yunhu&fontSize=56&animation=fadeIn" alt="Park Yunhu" width="100%"></p>
-
-# 박윤후
+# 박윤후 · Park Yunhu
 
 **AI Engineer (신입)** — LLM Agent · RAG · 검증/평가 · Backend  
 2027.02 졸업예정 · [Portfolio](https://park-yunhu-portfolio.vercel.app) · [byunhu35@gmail.com](mailto:byunhu35@gmail.com)
