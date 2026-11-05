@@ -18,7 +18,7 @@
 | [**Medical Insight Lab**](https://github.com/YunhuPark/Medical_Insight_Lab) | 의료 유튜브 3,713개 영상으로 "공포 제목이 조회수를 높이는가" 인과 검증 | 단순 비교 → PSM(약 0.65배) → 고정효과 → DiD, 불확실한 구간까지 그대로 보고 | statsmodels · scikit-learn |
 | [**yt-growth-coach**](https://github.com/YunhuPark/yt-growth-coach) | 영상 편집 도우미(무음 컷·자동 프레임·자막) + 채널 성과 검증 대시보드 | Next.js 16 · Claude API · Whisper · FFmpeg · Docker · CI 통과 | Next.js · TypeScript |
 
-**Also** · [golden-time](https://github.com/YunhuPark/golden-time) 실시간 응급실 검색 웹앱(배포, 커밋 380+) · [IMST-Mamba](https://github.com/YunhuPark/IMST-Mamba) 결측 상태 구분 패혈증 예측 모델(개인 연구, 미게재 초안)
+**Also** · [golden-time](https://github.com/YunhuPark/golden-time) 실시간 응급실 검색 웹앱(배포, 커밋 380+) · [IMST-Mamba](https://github.com/YunhuPark/IMST-Mamba) 결측 상태 구분 패혈증 예측 모델(개인 연구)
 
 ---
 
