@@ -20,6 +20,54 @@
 
 **Also** · [golden-time](https://github.com/YunhuPark/golden-time) 실시간 응급실 검색 웹앱(배포, 커밋 380+) · [IMST-Mamba](https://github.com/YunhuPark/IMST-Mamba) 결측 상태 구분 패혈증 예측 모델(개인 연구)
 
+<details>
+<summary><b>프로젝트 동작 구조 보기</b></summary>
+
+### devorch — 승인 없이는 반영되지 않는 통제 흐름
+
+```mermaid
+flowchart TD
+    A["작업 분석<br>위험도·영향 범위"] --> B["에이전트가 구현<br>(커밋 금지)"]
+    B --> C["독립 리뷰<br>READY / NOT_READY"]
+    C -->|NOT_READY| B
+    C -->|READY| D["임시 worktree에서<br>테스트"]
+    D --> E{"사람 승인<br>필요한가"}
+    E -->|HIGH·CRITICAL| F["터미널에서<br>devorch approve"]
+    E -->|LOW·MEDIUM| G["새 브랜치에 커밋"]
+    F --> G
+    G --> H["서명된 감사 로그"]
+```
+
+### algo-pipeline — 근거에 연결된 주장만 게시
+
+```mermaid
+flowchart LR
+    A["뉴스 수집"] --> B["Queue V2 attestation<br>출처·lineage 검증"]
+    B --> C["Claim 생성"]
+    C --> D["결정론 검증"]
+    D --> E["Semantic Critic"]
+    E --> F["Script 조립·렌더링"]
+    F --> G["publish attempt 기록"]
+    G --> H["Instagram API"]
+    H --> I["remote ID 기록<br>→ published 확정"]
+    D -.->|근거 없는 claim| X["차단"]
+    E -.->|비평 실패| X
+```
+
+### topic-ai — 사내 지식 통합 검색 RAG
+
+```mermaid
+flowchart LR
+    UI["React (Vite)"] -->|fetch| API["FastAPI"]
+    API --> DB[("Chroma<br>로컬 벡터 DB")]
+    API --> LLM["llm_backend<br>OpenAI 또는 Ollama"]
+    subgraph 오프라인 배치 적재
+        C["커넥터<br>Notion·Slack·Drive·GitHub·GitLab"] --> R["rag_pipeline.py"] --> DB
+    end
+```
+
+</details>
+
 ---
 
 ## Skills
@@ -28,6 +76,16 @@
 - **Backend** — Python · FastAPI · SQLite · OAuth · Docker · GitHub Actions
 - **Frontend** — TypeScript · React · Next.js
 - **Data** — PyTorch · scikit-learn · statsmodels · PSM · DiD
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=langchain&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
 
 ## Principles
 
