@@ -26,31 +26,30 @@
 ### devorch — 승인 없이는 반영되지 않는 통제 흐름
 
 ```mermaid
-flowchart TD
-    A["작업 분석<br>위험도·영향 범위"] --> B["에이전트가 구현<br>(커밋 금지)"]
-    B --> C["독립 리뷰<br>READY / NOT_READY"]
+flowchart LR
+    A["작업 분석<br>위험도"] --> B["구현<br>(커밋 금지)"]
+    B --> C["독립 리뷰"]
     C -->|NOT_READY| B
-    C -->|READY| D["임시 worktree에서<br>테스트"]
-    D --> E{"사람 승인<br>필요한가"}
-    E -->|HIGH·CRITICAL| F["터미널에서<br>devorch approve"]
-    E -->|LOW·MEDIUM| G["새 브랜치에 커밋"]
+    C -->|READY| D["테스트<br>(임시 worktree)"]
+    D --> E{"사람 승인<br>필요?"}
+    E -->|LOW·MEDIUM| G["새 브랜치<br>커밋"]
+    E -->|HIGH·CRITICAL| F["devorch<br>approve"]
     F --> G
-    G --> H["서명된 감사 로그"]
+    G --> H["서명된<br>감사 로그"]
 ```
 
 ### algo-pipeline — 근거에 연결된 주장만 게시
 
 ```mermaid
-flowchart TD
-    A["뉴스 수집"] --> B["Queue V2 attestation<br>출처·lineage 검증"]
-    B --> C["Claim 생성"]
-    C --> D["결정론 검증"]
-    D --> E["Semantic Critic"]
-    E --> F["Script 조립·렌더링"]
-    F --> G["publish attempt 기록"]
-    G --> H["Instagram API"]
-    H --> I["remote ID 기록<br>→ published 확정"]
-    D -.->|근거 없는 claim| X["차단"]
+flowchart LR
+    A["뉴스 수집"] --> B["Queue V2<br>출처 검증"]
+    B --> C["Claim<br>생성"]
+    C --> D["결정론<br>검증"]
+    D --> E["Semantic<br>Critic"]
+    E --> F["렌더링"]
+    F --> G["게시 시도<br>기록"]
+    G --> H["Instagram 게시<br>→ published"]
+    D -.->|근거 없음| X["차단"]
     E -.->|비평 실패| X
 ```
 
