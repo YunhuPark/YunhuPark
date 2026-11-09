@@ -41,7 +41,7 @@ flowchart TD
 ### algo-pipeline — 근거에 연결된 주장만 게시
 
 ```mermaid
-flowchart LR
+flowchart TD
     A["뉴스 수집"] --> B["Queue V2 attestation<br>출처·lineage 검증"]
     B --> C["Claim 생성"]
     C --> D["결정론 검증"]
