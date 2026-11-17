@@ -1,4 +1,4 @@
-## Hi there! <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f431.png" width="35" />
+## Hi there! <img src="./cat.gif" width="45" />
 
 # 박윤후 · Park Yunhu
 
