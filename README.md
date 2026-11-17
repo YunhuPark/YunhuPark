@@ -71,11 +71,11 @@ flowchart LR
 
 ## GitHub Activity
 
-<div align="center">
-  <img height="145px" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" />
-  <img height="145px" src="./profile-summary-card-output/tokyonight/3-stats.svg" />
-  <img height="145px" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" />
-</div>
+<p align="center">
+  <img width="46%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" />
+  <img width="26%" src="./profile-summary-card-output/tokyonight/3-stats.svg" />
+  <img width="26%" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" />
+</p>
 
 ## Skills
 
