@@ -11,7 +11,7 @@
 
 | 프로젝트 | 한 줄 | 핵심 근거 | 스택 |
 |---|---|---|---|
-| [**devorch**](https://github.com/YunhuPark/devorch) | AI 코딩 에이전트의 변경을 리뷰·테스트·사람 승인 후에만 반영하는 MCP 서버 | 개인 개발 · 커밋 100+ · CI 통과 · 실제 결함 12개로 리뷰어 탐지율 측정(5/12), 한계 공개 | Python · MCP · Docker |
+| [**devorch**](https://github.com/YunhuPark/devorch) | AI 코딩 에이전트의 변경을 리뷰·테스트·사람 승인 후에만 반영하는 MCP 서버 | 개인 개발 · 커밋 100+ · CI 통과 · 실제 결함 12개 탐지율 측정(5/12), 한계 공개 | Python · MCP · Docker |
 | [**topic-ai**](https://github.com/YunhuPark/topic-ai) | Notion·Slack·Drive·GitHub·GitLab 통합 검색 RAG 어시스턴트 | 이스트소프트 OJT 팀 최종 결과물 · 핵심 검색 3일 구현 · OAuth 권한 필터 · OpenAI↔Ollama 전환 | FastAPI · LangChain · Chroma · React |
 | [**algo-pipeline**](https://github.com/YunhuPark/algo-pipeline) | 근거에 연결된 주장만 카드뉴스로 만들어 게시하는 LLM 에이전트 | 개인 개발 · 커밋 70+ · 규칙 검증 → 의미 비평 → 게시 · 자동 게시 기본 OFF · CI 통과 | Python · FastAPI · SQLite |
 | [**Medi-Matrix**](https://github.com/YunhuPark/Medi-Matrix) | 의료영상 + 생체신호로 전원 병원 후보를 탐색하는 의사결정 지원 | PhysioNet 2019 GRU, Test AUROC 0.7946 · 공개 데모 배포 · 커밋 100+ | PyTorch · FastAPI · React |
