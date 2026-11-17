@@ -69,6 +69,14 @@ flowchart LR
 
 ---
 
+## GitHub Activity
+
+<div align="center">
+  <img height="145px" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" />
+  <img height="145px" src="./profile-summary-card-output/tokyonight/3-stats.svg" />
+  <img height="145px" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" />
+</div>
+
 ## Skills
 
 - **AI** — LLM Agent · MCP · RAG(LangChain, Chroma) · 프롬프트·평가 설계 · Anthropic / OpenAI / Gemini / Ollama
