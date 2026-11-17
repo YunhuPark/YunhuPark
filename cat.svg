@@ -1,0 +1,47 @@
+<svg width="80" height="60" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .body { animation: bob 0.45s infinite alternate ease-in-out; }
+    .paw-l { animation: tapL 0.22s infinite alternate ease-in-out; }
+    .paw-r { animation: tapR 0.22s infinite alternate-reverse ease-in-out; }
+    @keyframes bob {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(2.5px); }
+    }
+    @keyframes tapL {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-4px); }
+    }
+    @keyframes tapR {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-4px); }
+    }
+  </style>
+
+  <!-- 책상 라인 -->
+  <path d="M10 72 L110 72" stroke="#64748b" stroke-width="3.5" stroke-linecap="round" />
+
+  <!-- 고양이 몸통 & 얼굴 -->
+  <g class="body">
+    <!-- 귀 -->
+    <path d="M36 42 L34 22 L50 34" fill="#ffffff" stroke="#1e293b" stroke-width="3.5" stroke-linejoin="round" />
+    <path d="M84 42 L86 22 L70 34" fill="#ffffff" stroke="#1e293b" stroke-width="3.5" stroke-linejoin="round" />
+    <!-- 머리 윤곽 -->
+    <path d="M32 68 C30 42, 42 32, 60 32 C78 32, 90 42, 88 68" fill="#ffffff" stroke="#1e293b" stroke-width="3.5" stroke-linecap="round" />
+    <!-- 눈 -->
+    <circle cx="48" cy="49" r="3.2" fill="#1e293b" />
+    <circle cx="72" cy="49" r="3.2" fill="#1e293b" />
+    <!-- 볼터치 -->
+    <ellipse cx="41" cy="54" rx="4" ry="2.2" fill="#fda4af" opacity="0.8" />
+    <ellipse cx="79" cy="54" rx="4" ry="2.2" fill="#fda4af" opacity="0.8" />
+    <!-- 입 (ω 모양) -->
+    <path d="M55 54 Q57.5 57 60 54 Q62.5 57 65 54" stroke="#1e293b" stroke-width="2.5" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- 노트북 뒷면 -->
+  <path d="M44 72 L48 54 L76 54 L72 72 Z" fill="#e2e8f0" stroke="#1e293b" stroke-width="3" stroke-linejoin="round" />
+  <circle cx="61" cy="63" r="2.2" fill="#38bdf8" />
+
+  <!-- 타닥타닥 움직이는 앞발 -->
+  <ellipse class="paw-l" cx="38" cy="69" rx="7" ry="5" fill="#ffffff" stroke="#1e293b" stroke-width="3" />
+  <ellipse class="paw-r" cx="82" cy="69" rx="7" ry="5" fill="#ffffff" stroke="#1e293b" stroke-width="3" />
+</svg>
