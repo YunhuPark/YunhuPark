@@ -1,4 +1,4 @@
-# 박윤후 · Park Yunhu <img src="./bongo-cat.svg" width="45" />
+# 박윤후 · Park Yunhu <img src="./cat" width="45" />
 
 **AI Engineer (신입)** — LLM Agent · RAG · 검증/평가 · Backend  
 2027.02 졸업예정 · [Portfolio](https://park-yunhu-portfolio.vercel.app) · [byunhu35@gmail.com](mailto:byunhu35@gmail.com)
