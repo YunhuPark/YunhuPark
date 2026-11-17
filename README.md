@@ -1,4 +1,4 @@
-## Hi there! <img src="./cat.gif" width="45" />
+## Hi there! <img src="./655dc77d-d52a-4768-8091-6e697899cc00.webp" width="45" />
 
 # 박윤후 · Park Yunhu
 
