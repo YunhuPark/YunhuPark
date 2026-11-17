@@ -1,3 +1,5 @@
+## Hi there! <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f431.png" width="35" />
+
 # 박윤후 · Park Yunhu
 
 **AI Engineer (신입)** — LLM Agent · RAG · 검증/평가 · Backend  
