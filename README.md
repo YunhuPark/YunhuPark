@@ -72,7 +72,7 @@ flowchart LR
 ## GitHub Activity
 
 <p align="center">
-  <img width="50.1%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" />
+  <img width="50%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" />
   <img width="24.5%" src="./profile-summary-card-output/tokyonight/3-stats.svg" />
   <img width="24.5%" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" />
 </p>
