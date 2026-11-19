@@ -1,4 +1,4 @@
-## 박윤후 · Park Yunhu <sub><img src="./cat-v2.svg?v=2" width="75" /></sub>
+## 박윤후 · Park Yunhu <sub><img src="./cat-v2.svg?v=2" width="67" /></sub>
 
 **AI Engineer (신입)** — LLM Agent · RAG · 검증/평가 · Backend  
 2027.02 졸업예정 · [Portfolio](https://park-yunhu-portfolio.vercel.app) · [byunhu35@gmail.com](mailto:byunhu35@gmail.com)
@@ -72,7 +72,7 @@ flowchart LR
 ## GitHub Activity
 
 <p align="center">
-  <img width="49%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" />
+  <img width="50.1%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" />
   <img width="24.5%" src="./profile-summary-card-output/tokyonight/3-stats.svg" />
   <img width="24.5%" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" />
 </p>
